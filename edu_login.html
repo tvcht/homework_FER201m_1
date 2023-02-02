@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <style>
+        .login {
+            margin-left: 190px;
+        }
+        .icons {
+            justify-content: center;
+            display: flex;
+            gap: 1rem;
+            margin: 2rem;
+        }
+
+        .icon {
+            background-color: gray;
+            height: 38px;
+            width: 38px;
+            border-radius: 50%;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-tertiary" data-toggle="modal" data-target="#exampleModal" style="border-radius: 25px; margin: 20px; background-color: rgb(47, 174, 174); color: #ffffff;">
+        Login
+    </button> <br>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h2 class="login modal-title">Login</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="container">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Your email address ...">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Your password ...">
+                        </div>
+                        <button type="submit" class="btn btn-tertiary form-control" style="border-radius: 30px; background-color: rgb(47, 174, 174); color: #ffffff;">Login</button>
+                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <div>
+                        <div class="row justify-content-center">or use a social network</div>
+                        <div class="icons">
+                            <i class="fa fa-twitter icon"></i>
+                            <i class="fa fa-facebook icon"></i>
+                            <i class="fa fa-linkedin icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <h6>Not a member yet?</h6>
+                    <h6>
+                        <a href="#">Sign Up</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
